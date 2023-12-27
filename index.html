@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="https://rawgit.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+            function downloadPDF() {
+                // Get the left section content element
+                const leftSectionContent = document.getElementById('pdfContent');
+            
+                // Define options for pdf generation
+                const pdfOptions = {
+                    margin: 0,  // No margins
+                    filename: 'Hamza_Merdassi_Resume.pdf',
+                    image: { type: 'jpeg', quality: 0.98 },
+                    html2canvas: { scale: 2 },
+                    jsPDF: { 
+                        unit: 'mm',
+                        format: 'a3',  // A3 paper size
+                        orientation: 'portrait',  // Portrait orientation
+                        putOnlyUsedFonts: true  // Optimize for used fonts only
+                    }
+                };
+            
+                // Generate PDF from the left section content
+                html2pdf(leftSectionContent, pdfOptions);
+            }
+            
+            
+        
+    </script>
+
+</head>
+<body>
+    <main class="main-content">
+        <section class="left-section">
+            <div class="left-content" id="pdfContent"> <!-- Added ID "pdfContent" to this div -->
+                <div class="profile">
+                    <div class="image">
+                        <img src="/hamza.jpg" alt="">
+                    </div>
+                    <h2 class="name">Hamza Merdassi</h2>
+                    <p class="career">Devops Engineer</p>
+                </div>
+                <div class="contact-info">
+                    <h3 class="main-title">Contact Info</h3>
+                    <ul>
+                        <li>
+                            <i class="fa fa-phone"></i>
+                            54035174
+                        </li>
+                        <li>
+                            <i class="fa fa-linkedin"></i>
+                            https://www.linkedin.com/in/hamza-merdassi-558344273/
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                            hamzzamardessi@gmail.com
+                        </li>
+                      
+                      
+                        <li>
+                            <i class="fa fa-map-marker"></i>
+                            Mateur , Bizerte ,Tunisia
+                        </li>
+                    </ul>
+                </div>
+                <div class="skills-section">
+                    <h3 class="main-title">Skills</h3>
+                    <ul>
+                        <li>
+                            <p class="skill-title">Docker</p>
+                            <div class="progress-bar">
+                                <div class="progress js-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">CI /CD</p>
+                            <div class="progress-bar">
+                                <div class="progress ps-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Python</p>
+                            <div class="progress-bar">
+                                <div class="progress j-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Deployement</p>
+                            <div class="progress-bar">
+                                <div class="progress c-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Azure Cloud Services </p>
+                            <div class="progress-bar">
+                                <div class="progress ps-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Microservice Architect</p>
+                            <div class="progress-bar">
+                                <div class="progress n-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Monitoring</p>
+                            <div class="progress-bar">
+                                <div class="progress ps-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Testing Code</p>
+                            <div class="progress-bar">
+                                <div class="progress ps-progress"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <p class="skill-title">Coding</p>
+                            <div class="progress-bar">
+                                <div class="progress ps-progress"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="references-section">
+                    <h3 class="main-title">Certifcation</h3>
+                    <div class="referee">
+                        <h6 class="sub-title">Docker Essentials A Developer</h6>
+                        <p class="sub-para">IBM</p>
+                    </div>
+                    <div class="referee">
+                        <h6 class="sub-title">Linode Kubernetes Engine</h6>
+                        <p class="sub-para">Kode Kloud</p>
+                    </div>
+                    <div class="referee">
+                        <h6 class="sub-title">Foundational C#</h6>
+                        <p class="sub-para">Microsoft</p>
+                    </div>
+                    <div class="referee">
+                        <h6 class="sub-title">AWS Cloud Practitioner</h6>
+                        <p class="sub-para">Aws</p>
+                    </div>
+                </div>
+                <div class="references-section">
+                    <h3 class="main-title">Language
+                    </h3>
+                    <div class="referee">
+                        <h6 class="sub-title">English</h6>
+                        <h6 class="sub-title">French</h6>
+
+                        <h6 class="sub-title">Arabic</h6>
+
+                        
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="right-section">
+            <div class="right-main-content">
+                <section class="about sect">
+                    <h2 class="right-title">About</h2>
+                    <p class="para">
+                        Passionate student of Mobile Development, DevOps, and Cloud, I am
+                        endowed with strong autonomy, a positive attitude, and great rigor.
+                        Currently looking for a graduate internship to put my skills into practice
+                        and add value to ambitious projects
+                    </p>
+                </section>
+
+                <section class="experince sect">
+                    <h2 class="right-title">Experience</h2>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">ITGATE</h5>
+                            <p class="para">September 2023 - October 2023</p>
+                            <p class="para">Online</p>
+
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">Devops Internship
+                                </h5>
+
+                                <p class="para">
+                                    Automated the continuous deployment process of a Spring Boot application.<br />
+                                    Technologies : Jenkins, Git, GitHub, Docker 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">BeCoder</h5>
+                            <p class="para">August 2023 to September 2023</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">Mobile Développer Internship</h5>
+                                <p class="para">
+                                    Designed and developed the interfaces of a mobile application for
+travelers to facilitate the exchange of products. 
+<br>
+Technologies: Figma, Flutter
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Aurax</h5>
+                            <p class="para">February 2022 to June 2022 </p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">Graduated Project Internship</h5>
+                                <p class="para">
+                                    Designed and developed an E-learning platform and mobile application
+                                    <br>Technologies: React.js React Native, MongoDB, Express
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Aurax</h5>
+                            <p class="para">July 2020 to August 2020</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">Web Développer Internship</h5>
+                                <p class="para">
+                                    Developed WordPress interfaces<br>
+                                    Technologies : Html - Css -JavaScript -Wordpress
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="education sect">
+                    <h2 class="right-title">Education</h2>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title"> Higher Institutes of Technology Studies of Tozeur, Tunisia</h5>
+                            <p class="para">
+                                2022 - 2024
+                           </p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">Master Professional Devops Cloud (In Progress)
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title"> Higher Institute of Computer Science, Mahdia, Tunisia</h5>
+                            <p class="para">2019 - 2022</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">Bachelor of Business Administration
+                                </h5>
+                                <p class="para">2019-2022 <br> 
+                                    Speciality: E-Business</p>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Route de Tabarka-Mateur High School 
+                            </h5>
+                            <p class="para">2018 - Present</p>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <h5 class="tl-title-2">Baccalaureate in Economics and Management
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="awards sect">
+                    <h2 class="right-title">ACADEMIC PROJECT
+                    </h2>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Devops Project</h5>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <p class="para">
+                                    Created the Jenkins pipeline for a web
+                                    application (Angular, SpringBoot),
+                                     Monitored the Spring Boot application, Docker, and
+                                    Kubernetes, Automated the creation of the production
+                                    environment (Ansible, Terraform).
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Student Managemen</h5>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <p class="para">
+                                    Developed an application to
+                                    manage student data.
+                                    Technologies: MEAN Stack
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Mini projet Devops</h5>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <p class="para">
+                                    Created, deployed, and published a
+Python flask microservice with vagrant Docker.
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline">
+                        <div class="left-tl-content">
+                            <h5 class="tl-title">Monitoring and alert <br>spring boot application</h5>
+                        </div>
+                        <div class="right-tl-content">
+                            <div class="tl-content">
+                                <p class="para">
+                                    Alert of an active or not server for a
+                                    SpringBoot application with an email message,
+                                    Slack and Pager Duty
+                                    Technology: Prometheus, Portainer, Grafana,
+                                    Prometheus Alert Manager, Docker
+                                </p>
+<!-- "Download PDF" button with the updated class -->
+            <button class="download-btn" onclick="downloadPDF()">Download PDF</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
